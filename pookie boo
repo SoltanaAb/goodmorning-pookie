@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Good Morning أرنوبي</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffe6f2;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .container {
+      text-align: center;
+      animation: fadeIn 2s ease-out;
+    }
+    h1 {
+      font-size: 3em;
+      color: #ff66b2;
+      animation: bounceIn 2s;
+      text-shadow: 2px 2px 5px rgba(255, 105, 180, 0.7);
+    }
+    p {
+      font-size: 1.5em;
+      color: #ff66b2;
+      animation: slideUp 2s ease-out;
+    }
+    .heart {
+      font-size: 50px;
+      animation: beat 1.5s infinite;
+      color: #ff66b2;
+      margin: 20px 0;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes bounceIn {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      60% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    @keyframes slideUp {
+      0% {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    @keyframes beat {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Good Morning أرنوبي! 🌞</h1>
+    <p>Hope your day is filled with joy and love!</p>
+    <div class="heart">❤️</div>
+    <div class="heart">💖</div>
+    <div class="heart">💘</div>
+  </div>
+</body>
+</html>
